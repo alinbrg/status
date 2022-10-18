@@ -1,0 +1,126 @@
+@font-face {
+	font-family: "FiraGO";
+	src: url("../fonts/FiraGO-Regular.eot");
+	src: url("../fonts/FiraGO-Regular.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/FiraGO-Regular.woff2") format("woff2"),
+		url("../fonts/FiraGO-Regular.woff") format("woff"),
+		url("../fonts/FiraGO-Regular.ttf") format("truetype"),
+		url("../fonts/FiraGO-Regular.svg#FiraGO-Regular") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: all 0.3s;
+	font-family: "FiraGO";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+}
+:root {
+	--primary: rgba(255, 46, 49, 1);
+	--primary8: rgba(255, 46, 49, 0.8);
+	--primary6: rgba(255, 46, 49, 0.6);
+	--primary4: rgba(255, 46, 49, 0.4);
+	--primary2: rgba(255, 46, 49, 0.2);
+
+	--red: rgba(255, 88, 90, 1);
+	--red8: rgba(255, 88, 90, 0.8);
+	--red6: rgba(255, 88, 90, 0.6);
+	--red4: rgba(255, 88, 90, 0.4);
+	--red2: rgba(255, 88, 90, 0.2);
+
+	--black: rgba(49, 49, 49, 1);
+	--black8: rgba(49, 49, 49, 0.8);
+	--black6: rgba(49, 49, 49, 0.6);
+	--black4: rgba(49, 49, 49, 0.4);
+	--black2: rgba(49, 49, 49, 0.2);
+
+	--whitesmoke: rgba(247, 250, 253, 1);
+	--whitesmoke8: rgba(247, 250, 253, 0.8);
+	--whitesmoke6: rgba(247, 250, 253, 0.6);
+	--whitesmoke4: rgba(247, 250, 253, 0.4);
+	--whitesmoke2: rgba(247, 250, 253, 0.2);
+
+	--white: rgba(255, 255, 255, 1);
+	--white8: rgba(255, 255, 255, 0.8);
+	--white6: rgba(255, 255, 255, 0.6);
+	--white4: rgba(255, 255, 255, 0.4);
+	--white2: rgba(255, 255, 255, 0.2);
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-feature-settings: "case" on;
+}
+
+.container {
+	max-width: 1440px;
+	width: 90%;
+	margin: auto;
+}
+.d-flex {
+	display: flex;
+}
+.align-items-center {
+	align-items: center;
+}
+.justify-content-between {
+	justify-content: space-between;
+}
+.justify-content-center {
+	justify-content: center;
+}
+.d-flex-centered {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.d-flex-between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.btn {
+	font-feature-settings: "case" on;
+	border-radius: 8px;
+	padding: 16px 28px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.btn-default {
+	color: var(--red);
+	border: 1px solid var(--primary8);
+}
+.btn-default:hover {
+	border-color: var(--red);
+}
+.btn-default-bg {
+	background: var(--primary8);
+	color: #ffffff;
+}
+.btn-default-bg:hover {
+	background: var(--red8);
+}
+.btn-disabled {
+	border: 1px solid #bdbdbd;
+	color: #bdbdbd;
+}
+.btn-disabled-bg {
+	background: #bdbdbd;
+	color: #ffffff;
+}
